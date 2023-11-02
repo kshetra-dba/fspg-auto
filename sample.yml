@@ -1,0 +1,15 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: d360
+  host: localhost
+  username: root
+  password: password
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: sample
+  host: localhost
+  username: root
+  password: password

@@ -1,0 +1,29 @@
+{
+  "workspace_id": "9d159c76-eab9-4af6-b2b6-b6050967edc9",
+  "start_time": "2023-10-31T13:43:23Z",
+  "end_time": "2023-10-31T14:13:23Z",
+
+  "logical_server_name": ["demo-31oct2023"],
+ 
+  "query_id": ["39207307", "3921192557", "4050214184", "355420951", "347448438"],   
+
+  "metrics": [
+    "cpu_percent",
+    "memory_percent",
+    "iops",
+    "disk_iops_consumed_percentage",
+    "xact_commit",
+    "storage_percent",
+    "temp_files",
+    "active_connections",
+    "tup_inserted",
+    "tup_updated",
+    "tup_deleted"
+  ],
+ 
+ "metrics_cust":["custom_metric"]
+
+
+}
+
+

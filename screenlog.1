@@ -1,0 +1,2709 @@
+root@azure-kt-1st:~/hammerauto# screen -ls
+There is a screen on:
+	3142519.hammerauto1	(10/30/23 06:53:05)	(Attached)
+1 Socket in /run/screen/S-root.
+root@azure-kt-1st:~/hammerauto# ls -l
+total 96
+-rwxr--r-- 1 root root 16890 Oct 30 06:52 [0m[01;32mcreate_load_data.sh[0m
+-rwxr--r-- 1 root root  2026 Oct 25 04:51 [01;32mcreate_load_data.sh.1[0m
+-rwxr--r-- 1 root root  8922 Oct 25 10:12 [01;32mcreate_load_data.sh.10262023[0m
+-rw-r--r-- 1 root root   646 Oct 30 06:52 database.yml
+-rw-r--r-- 1 root root   441 Oct 25 04:54 database.yml.1
+-rw-r--r-- 1 root root   447 Oct 25 09:47 database.yml.10262023
+-rw-r--r-- 1 root root   658 Oct 30 05:14 database.yml.10302023
+-rw-r--r-- 1 root root   448 Oct 25 09:52 database.yml.burst
+-rw-r--r-- 1 root root   447 Oct 25 09:47 database.yml.old
+-rwxr--r-- 1 root root  5575 Oct 23 12:11 [01;32mload_data_hammer.sh[0m
+-rwxr--r-- 1 root root  5575 Oct 23 12:11 [01;32mload_data_hammer.sh.10252013[0m
+-rwxr--r-- 1 root root  5757 Oct 26 10:08 [01;32msample.sh[0m
+-rw-r--r-- 1 root root   238 Oct 25 03:51 sample.yml
+-rw-r--r-- 1 root root    75 Oct 30 06:53 screenlog.0
+-rw-r--r-- 1 root root    32 Oct 30 06:53 screenlog.1
+root@azure-kt-1st:~/hammerauto# ./cra[Keate_load_data.sh
+[36mThis command is in preview and under development. Reference and support levels: https://aka.ms/CLI_refstatus[0m
+[93mYou already have the latest azure-cli version: 2.53.1[0m
+[93mUpgrade finished.You can enable auto-upgrade with 'az config set auto-upgrade.enable=yes'. More details in https://docs.microsoft.com/cli/azure/update-azure-cli#automatic-update[0m
+[93mTo sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code AMTRA5VVR to authenticate.[0m
+[
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "52942f45-54fd-4fd9-b730-03d518fedf35",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "ES-TAP-TestContent",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "a1ffc958-d2c7-493e-9f1e-125a0477f536",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "MSFT-MVD-05-Shared-EUDB",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "420bbeda-fe98-4249-9ff1-aebfe13d9d90",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSRP - PG FS Vnet",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "1d08509f-0870-488f-ad4e-ea1ff6694c4e",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSMP - PG FS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "cb324d84-b6d5-40ba-bb22-e93f66289f89",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru Test Images and Containers",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b47d6ea4-1f8c-4768-b8b3-a06b6a70c90c",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru CI Master - GCI WebApi Test",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "0425fed5-2924-472f-bc9d-d09164c9ed00",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSMP - PG FS Vnet",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4d14b8f2-daef-4d20-b56f-eaf58a1be05b",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru CI Master - GCI Continuous Test",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "0460622d-6ed8-4f09-a428-9e3db741e0b7",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSRC - PG FS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "d79c6258-757a-4a6d-a34a-33411accd032",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru CI Master - PGFS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b9afc223-c06f-4939-8ddc-00a48958c57b",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSDEV - PG FS Vnet",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "d4952be9-e8f5-4cf2-b248-0c303ecf5210",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru CI Master - MySQLFS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "04953e2a-024f-49a2-904d-00a86276f093",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSMC - PG FS Vnet",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b44a21fe-b5ad-42ad-bdc0-f77e9e13a48a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSMC - PG FS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "bc532516-81d4-4156-a01d-72c6ce0c360d",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSMS - PG FS Vnet",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "7a30bf5c-44fe-42c6-9ef8-988fd6164254",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSMC - PG FS Dataplane 2",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b67c24d2-028d-4610-8370-2d0b793bec40",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru Dev/Test infra",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "cb9d743d-2140-4e73-b871-cd31abab1d2f",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru Onebox Dev - MySQLFS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "f30f32e1-0e8e-48ac-bc05-833e62ff6ad3",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru CI Master - GCI CAS Test",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "e30e9226-c0f4-4aae-8e5b-072c10392b2e",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSRP - PG FS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "48884b01-3b39-4b31-8315-28e967660b99",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSRS - PG FS Vnet",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "d4fbfa87-b94d-4b13-906f-97361388c5e4",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSMC - PG FS - ARM",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4133adc4-486f-4159-9143-7fe42b7fd643",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Microsoft Internal Consumption",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "50a230fd-ea00-434b-860b-c1af82229d52",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru Onebox Dev - PGHS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4a739919-f590-44f7-9eb8-0b84cde3bac8",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSDEV - PG FS - ARM",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b0f89058-3a6b-4aef-866a-bcd7b9f8f80a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSDEV - PG FS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "2dcc2983-3aad-4f6a-9bad-0adff0f0f5c8",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru OSSMS - PG FS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "7fec3109-5b78-4a24-b834-5d47d63e2596",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2e30bb83-54fe-4833-afe1-65e4ee7e3032"
+      }
+    ],
+    "name": "DS Data Magnet Incubations",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "929287ae-832a-4946-8006-a6cc2a3f7244",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Meru Onebox Dev - PGFS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b74d5345-100f-408a-a7ca-47abb52ba60d",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "DSE EDog",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b11727d3-cf5a-4917-ac31-6f06460ff9b2",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Shared Internal Workbooks",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "f55b9e23-2408-4b8a-be9b-1f02653d186c",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "CosmosDB-CN-Dev",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "5f1c161a-9ca6-41ef-be9f-0d0510cebcaf",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "PJ-CosmosDbAndPostGresSql-01",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "df969b00-37ba-4874-bb86-1f60b9cea9fc",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "FUN-DI-PP-Dev04",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "2f96ae42-240b-4228-bafa-26d8b7b03bf3",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "MSFT-CloudMS-CPT-PRD-01",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "8c4b5b03-3b24-4ed0-91f5-a703cd91b412",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Cosmos_C&E_Azure_AzureEngineeringSystems_100200",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "a8f8e94b-3b2d-46ad-94ba-2d2f59aa4dd5",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "CSCP-GCS ExpressRoute TEST",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "dd4c2dac-db51-4cd0-b734-684c6cc360c1",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "Geneva Analytics Intelligent Data Test (Corp)",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "bac420ed-c6fc-4a05-8ac1-8c0c52da1d6e",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "IDEAs MS Reporting",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "9d3faf91-9fbe-450d-b5dd-37bea9595299",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "OrcasDifferentiation",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "54b875cc-a81a-4914-8bfd-1a36bc7ddf4d",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "MSFT-WindowsVirtualDesktop-01",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "588845a8-a4a7-4ab1-83a1-1388452e8c0c",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Saidi Dev and Test Subscription",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "407ff5d7-0113-4c5c-8534-f5cfb09298f5",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "msteams.nonprod.pub.msft.msts",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "c3547baf-332f-4d8f-96bd-0659b39c7a59",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "MSAI Search Research",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b1c30b67-fe4d-43c9-9867-f04d410cda8c",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AzCleanup_Infra_NonProd_01_BigData_All_Other_Teams",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "d904ecfd-c0d1-48e6-aa53-87d47c77a8b5",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "CloudTest-d2c75e0a-9cc0-40d3-922e-2924299fde1c",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "0f96ce66-0d2a-4100-9ae9-867e1756142e",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "1ES-88539211-baaa-4162-8c49-4df43a111359",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4bba9bc7-0ab4-428a-ba4d-a8ce864a4b64",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "1ES-148bffe3-0304-454b-8a25-ee196b761f18",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "88539211-baaa-4162-8c49-4df43a111359",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Trident DW Test",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "f58bb0f6-2c67-4201-b928-3e8acf592fea",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "AzurePolaris-TestInfra-alekvu-R&D-P74438",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "3e9a881b-7d38-43eb-8039-9386909501c2",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "SqlCloudTest - KeyVaultScaleOut3 (Experiments)",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "844db758-2b23-4aee-8cf5-afde7007006b",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "CloudTest-71953302-915a-486c-9d4e-6c95105a4c0d",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "a86b0c74-66ba-49a4-8277-d2868b41dd4c",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "wasd-cloudtest-secrets-akv",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "ffee662d-2796-4883-b93e-71e5b46dbfc5",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AzCleanup_Infra_NonProd_01_SQL_Org",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "27fe8691-13d0-43ff-86a1-c9eee19fad91",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "SqlCloudTest - KeyVaultScaleOut1 (Onebox)",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "ec1432c8-8e85-4aba-981f-9e58a0074584",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "PJ-AzureSQL-01",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "88d5392f-a34f-4769-b405-f597fc533613",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "ClientToolsInfra_670062",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "827e327a-4ef2-4544-b71b-f21a99a0fc49",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AzCleanup_Infra_NonProd_01_OSS_Databases_Team",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "77cbc1d6-71c4-4bee-9693-06af82eca235",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AzCleanup_Infra_NonProd_01_Kusto_Team",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "7d0a3400-b117-4284-91e6-da16a1d52e02",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AzCleanup_Infra_NonProd_01_Azure_Plus",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b43a6159-1bea-4fa2-9407-e875fdc0ff55",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "BAP IA EU Schrems (P)",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "dad45786-32e5-4ef3-b90e-8e0838fbadb6",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AnE.ExP.Production",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "f30787b9-82a8-4e74-bb0f-f12d64ecc496",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Edge ExpInsights",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "26596251-f2f3-4e31-8a1b-f0754e32ad73",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Epic-Edge-ES-SrcPub-Prod",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "482e1993-01d4-4b16-bff4-1866929176a1",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Epic-Edge-ES-MergeResolver",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "932f56c7-38bf-4254-a4aa-50dbf02c55d9",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Cosmos_WDG_Universal Store_Data & Engineering Services_100066",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "c071af7d-3311-4dda-aa85-18afdeaed3a0",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Cosmos_C&E_DPG_SQL Azure DB_100286",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "ef5e6a8a-fbb4-4e78-89da-f3690adfaa15",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "BusinessAnalytics-Development-amyy-R&D-10137371",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "bb193ea5-af15-439e-b393-588393e36ca0",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "sds-analytics-prd-1_527685",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "bb9a55a8-96c5-48da-a363-9a6401ca5812",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Cosmos_C&E_DPG_DPES_100290",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "e01de573-132a-42ac-9ee2-f9dea9dd2717",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Cosmos_WDG_Core_BnB_100292",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "03bb6720-b3b0-45b0-9c37-748c34c86ad7",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "DS-SQL-CHOICE_HelsinkiLab_slavao_60843",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "fa58cf66-caaf-4ba9-875d-f310d3694845",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "DS-SQLDB-SQLAzurePMDemos_ajayj_COGS_42477",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "21917f8a-1c1e-430a-8d73-f84403731f87",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "SQLDbNative: COGS (Internal)",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "d8873021-67c0-4ff6-857b-1220e0b0e3c0",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "sql-azure-deployinfra-dev-disposable",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4115b323-4aac-47f4-bb13-22af265ed58b",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "ES-ESP-AS-vPack-Nonprod",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "19785813-35fc-49b2-ada1-e6a98f99d841",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Azure SQL DB Project Orcas - Build and Test Corp",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "9ec1d932-0f3f-486c-acc6-e7d78b358f9b",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "TScience",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "e686ef8c-d35d-4e9b-92f8-caaaa7948c0a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Applied Sciences Group Dev",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "8c2c7b23-848d-40fe-b817-690d79ad9dfd",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      },
+      {
+        "tenantId": "f5ae2861-b3fc-449d-a9e7-49c14d011ac0"
+      }
+    ],
+    "name": "Purview_Demo_PartnerSandbox",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "cb9eb375-570a-4e75-b83a-77dd942bee9f",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "ATS_Shared_Dev_AKS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "6f53185c-ea09-4fc3-9075-318dec805303",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "33e01921-4d64-4f8c-a055-5bdaffd5e33d"
+      }
+    ],
+    "name": "RPSAAS CSM Dogfood",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "1278a874-89fc-418c-b6b9-ac763b000415",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Microsoft Azure Internal Consumption (nbrady)",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "29de2cfc-f00a-43bb-bdc8-3108795bd282",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "MSFT-Modern Device-Modern Mgmt-Imaging00",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "dcbdac96-1896-478d-89fc-c95ed43f4596",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "pgattikoppul Projects",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "2145a411-d149-4010-84d4-40fe8a55db44",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "ARM Test Environment",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "7afc2d66-d5b4-4e84-970b-a782e3e4cc46",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "CLOUDBUILD-ANYBUILD-POC-01",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "3b2fda06-3ef6-454a-9dd5-994a548243e9",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "Microsoft Employee & Executive Communications",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "0368444d-756e-4ca6-9ecd-e964248c227a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AnyBuild-InternalProdClusters",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4dc2cd39-7a89-43d8-bebe-8bb501359891",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Observability_AzMon_Grafana_Dev",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "5a7084cb-3357-4ee0-b28f-a3230de8b337",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "Finance BI Services",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "227531a4-d775-435b-a878-963ed8d0d18f",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "cdc5aeea-15c5-4db6-b079-fcadd2505dc2"
+      },
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "Skype-1ES-DEV",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "2998c1d7-09ae-4b08-b6d0-9c2ee5a84c35",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Core-ES-BLD-Allegro-Dev",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "432a7068-99ae-4975-ad38-d96b71172cdf",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Azure Profiler - Testing",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4628298e-882d-4f12-abf4-a9f9654960bb",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "ES_DeveloperProductivity_Dev",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "0cd6095b-b140-41ec-ad1d-32f2f7493386",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "1IS - One Integration Service - NonProduction",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "f455dda6-5a9b-4d71-8d51-7afc3b459039",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "SPO Sandbox Testing",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b65b516b-415b-4c68-a254-bfa7411275f8",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Azure CloudES CDP ER - Test",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b68b2f37-1d37-4c2f-80f6-c23de402792e",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "Semantic Machines R&D Subscription 1",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "f1d79e73-f8e3-4b10-bfdb-4207ca0723ed",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AML Infra - Engineering System",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "c0620f27-ac38-468c-a26b-264009fe7c41",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AzureQualityInfrastructureSubscription-Test00",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "1163fbbe-27e7-4b0f-8466-195fe5417043",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      },
+      {
+        "tenantId": "d0ecd01b-d782-448e-bae0-c3cad0e0543a"
+      },
+      {
+        "tenantId": "94c4857e-1130-4ab8-8eac-069b40c9db20"
+      },
+      {
+        "tenantId": "f702a9dc-ae48-4dc7-8f0a-8155a6dfa4e5"
+      }
+    ],
+    "name": "Python_AI_Tools_PM_Team_Sub",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "eef8b6d5-94da-4b36-9327-a662f2674efb",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AISC-EngSys-01",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "3cd95ff9-ac62-4b5c-8240-0cd046687ea0",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Internal App Insights Resources for Perflens",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "8cff5d56-95fb-4a74-ab9d-079edb45313e",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "cdc5aeea-15c5-4db6-b079-fcadd2505dc2"
+      }
+    ],
+    "name": "Skype-NetEM-STAGING",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "eec2de82-6ab2-4a84-ae5f-57e9a10bf661",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "ServicesPortfolio MCS",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "e0fd569c-e34a-4249-8c24-e8d723c7f054",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AML - Responsible AI R&D",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "e75c95f3-27b4-410f-a40e-2b9153a807dd",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AEther Dev",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "3905431d-c062-4c17-8fd9-c51f89f334c4",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Pytorch Build",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "13723929-6644-4060-a50a-cc38ebc5e8b1",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "LinuxMdsd Test",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "ca38bc19-cf50-48e2-bbe6-8c35b40212d8",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Maps Mining Azure",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "8ae1955e-f748-4273-a507-10159ba940f9",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "SPO-CyrusB",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "21d8f407-c4c4-452e-87a4-e609bfb86248",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      },
+      {
+        "tenantId": "f40b18ba-b66c-49e4-9fd8-4fc7d3d19f0f"
+      }
+    ],
+    "name": "DataZen",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "ae71ef11-a03f-4b4f-a0e6-ef144727c711",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "Bing MM Measurement",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "9b4236fe-df75-4289-bf00-40628ed41fd9",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Customer Confidence Proof of Concepts",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "85b3dbca-5974-4067-9669-67a141095a76",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "027fe226-784c-4798-a157-5e0e7893424d"
+      }
+    ],
+    "name": "Terraform Testing on Azure with TTL = 2 Days",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "a1920ebd-59b7-4f19-af9f-5e80599e88e4",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Babel",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "d2c9544f-4329-4642-b73d-020e7fef844f",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "HPCScrub1",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "e72e5254-f265-4e95-9bd2-9ee8e7329051",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Speech Services - DEV - SDK (rob)",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "bac044cf-49e1-4843-8dda-1ce9662606c8",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "UI Fabric",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "a1c3dc6b-8630-4bb7-a29e-4ed4407c329b",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Speech Services - EXP2",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "79f57c16-00fe-48da-87d4-5192e86cd047",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "TScienceGPU",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "9372b318-ed3a-4504-95a6-941201300f78",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "OE-Service Management Platform - External - Prod",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "09fa8e83-d677-474f-8f73-2a954a0b0ea4",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "MaaS - Runner Resource Creation - AzureCloud",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "40dd91f6-ead1-40dd-a291-2ae37717981b",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "varung poc",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4f80d6c7-3b04-4854-9f1a-2d7c587d4f64",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AzureMonitor_SDKs_Secondary_RnD",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "2e131dbf-96b3-4377-9c8e-de5d3047f566",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "Kusto_PM_Demo",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "664c7857-b611-43c5-9bdb-8d4595a8c515",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "CRE Reporting sub",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "b2a328a7-ffff-4c09-b643-a4758cf170bc",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AISC-DEV-02",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "ec6f35fa-c805-4254-b10b-03a5e0536b69",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "dpu-build",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "4bbecc02-f2c3-402a-8e01-1dfb1ffef499",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Azure Portal Telemetry Reporting",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "50ff7bc0-cd15-49d5-abb2-e975184c2f65",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "IDXXpertRandD Dev Data Catalog",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "c6dcd830-359f-44d0-b4d4-c1ba95e86f48",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "OSS_AzureSpringCloud_Testing_062020",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "0d3c42e6-33d1-450c-8e05-e83bd643e96a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "SqlMigration_CloudTest",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "fc04246f-04c5-437e-ac5e-206a19e7193f",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      },
+      {
+        "tenantId": "33e01921-4d64-4f8c-a055-5bdaffd5e33d"
+      }
+    ],
+    "name": "DMSInternalPreviewtest",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "cb33edf0-f7b3-405b-a766-592dd69a1987",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "DMSTest",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "97181df2-909d-420b-ab93-1bff15acb6b7",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "DMSInternalPreview2",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "0ee78edb-a0ad-456c-a0a2-901bf542c102",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "ADF Test sub - App Model V2",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "8168a4f2-74d6-4663-9951-8e3a454937b7",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "TEST - IbizaFx misc",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "84ca48fe-c942-42e5-b492-d56681d058fa",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "AEP_CorePlatform_Playground_Dev",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "2686cb8a-d887-452c-a8d1-0f10a285ecaf",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "wasd-prod-deployment-ms",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "cd0fa82d-b6b6-4361-b002-050c32f71353",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Falcon Billing",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "f1251103-af5a-44b7-ac2a-4e5538e80cde",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "O365 OFE - Focus Infrastructure (CORP)",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "f6869ac6-2a40-404f-acd3-d07461be771a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Synthetic Testing Lab",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "8d5565a3-dec1-4ee2-86d6-8aabb315eec4",
+    "isDefault": false,
+    "managedByTenants": [
+      {
+        "tenantId": "2f4a9838-26b7-47ee-be60-ccc1fdec5953"
+      }
+    ],
+    "name": "Albus Analytics Service - Stage",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "d12e3a86-9f6e-4655-884c-0e3b4b4d1b83",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "OneDeploy Analytics and Intelligence",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "03737e44-7d27-41b0-9d09-8e65f33ea27a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Compute Aurora - Aurora Redmond Services - Live",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "52a442a2-31e9-42f9-8e3e-4b27dbf82673",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "Core-ES-WorkManagement",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "6d17b59e-06c4-4203-89d2-de793ebf5452",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "OE-1JS Core - External - Dev",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "07b929e5-80fe-4775-95f5-d25ceddf0e90",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "ADR-nonprod-grafana",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "id": "365a62ee-6166-4d37-a936-03585106dd50",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "NetVal Dev Sandbox",
+    "state": "Enabled",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "user": {
+      "name": "ktutika@microsoft.com",
+      "type": "user"
+    }
+  }
+]
+Server creation is starting......
+Mon Oct 30 06:56:26 UTC 2023
+[91m(ResourceNotFound) The Resource 'Microsoft.DBforPostgreSQL/flexibleServers/hammer-kt-demo' under resource group 'Azure-test-kt' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix
+Code: ResourceNotFound
+Message: The Resource 'Microsoft.DBforPostgreSQL/flexibleServers/hammer-kt-demo' under resource group 'Azure-test-kt' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix[0m
+[93mChecking the existence of the resource group 'Azure-test-kt'...[0m
+[93mResource group 'Azure-test-kt' exists ? : True [0m
+[93mCreating PostgreSQL Server 'hammer-kt-demo' in group 'Azure-test-kt'...[0m
+[93mYour server 'hammer-kt-demo' is using sku 'Standard_D8ds_v5' (Paid Tier). Please refer to https://aka.ms/postgres-pricing for pricing details[0m
+[K - Starting ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Finished ..[K[93mConfiguring server firewall rule to accept connections from '0.0.0.0' to '255.255.255.255'...[0m
+[93mCreating PostgreSQL database 'flexibleserverdb'...[0m
+[K - Starting ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Finished ..[K[93mMake a note of your password. If you forget, you would have to reset your password with "az postgres flexible-server update -n hammer-kt-demo -g Azure-test-kt -p <new-password>".[0m
+[93mTry using 'az postgres flexible-server connect' command to test out connection.[0m
+{
+  "connectionString": "postgresql://postgres:test@123@hammer-kt-demo.postgres.database.azure.com/flexibleserverdb?sslmode=require",
+  "databaseName": "flexibleserverdb",
+  "firewallName": "AllowAll_2023-10-30_6-59-32",
+  "host": "hammer-kt-demo.postgres.database.azure.com",
+  "id": "/subscriptions/9d3faf91-9fbe-450d-b5dd-37bea9595299/resourceGroups/Azure-test-kt/providers/Microsoft.DBforPostgreSQL/flexibleServers/hammer-kt-demo",
+  "location": "East US",
+  "password": "test@123",
+  "resourceGroup": "Azure-test-kt",
+  "skuname": "Standard_D8ds_v5",
+  "username": "postgres",
+  "version": "14"
+}
+server creation is finished
+Mon Oct 30 07:00:44 UTC 2023
+############################# server creation has finished ######################################
+[93mconfiguration_name is not a known attribute of class <class 'azure.mgmt.rdbms.postgresql_flexibleservers.models._models_py3.Configuration'> and will be ignored[0m
+[K - Starting ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Finished ..[K{
+  "allowedValues": "top,all,none",
+  "dataType": "Enumeration",
+  "defaultValue": "none",
+  "description": "Sets query capture mode for query store. None disables any capturing.",
+  "documentationLink": null,
+  "id": "/subscriptions/9d3faf91-9fbe-450d-b5dd-37bea9595299/resourceGroups/Azure-test-kt/providers/Microsoft.DBforPostgreSQL/flexibleServers/hammer-kt-demo/configurations/pg_qs.query_capture_mode",
+  "isConfigPendingRestart": false,
+  "isDynamicConfig": true,
+  "isReadOnly": false,
+  "name": "pg_qs.query_capture_mode",
+  "resourceGroup": "Azure-test-kt",
+  "source": "user-override",
+  "systemData": null,
+  "type": "Microsoft.DBforPostgreSQL/flexibleServers/configurations",
+  "unit": null,
+  "value": "ALL"
+}
+[93mconfiguration_name is not a known attribute of class <class 'azure.mgmt.rdbms.postgresql_flexibleservers.models._models_py3.Configuration'> and will be ignored[0m
+[K - Starting ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Finished ..[K{
+  "allowedValues": "on,off",
+  "dataType": "Boolean",
+  "defaultValue": "off",
+  "description": "Turns saving query plans on or off for pg_qs ",
+  "documentationLink": null,
+  "id": "/subscriptions/9d3faf91-9fbe-450d-b5dd-37bea9595299/resourceGroups/Azure-test-kt/providers/Microsoft.DBforPostgreSQL/flexibleServers/hammer-kt-demo/configurations/pg_qs.store_query_plans",
+  "isConfigPendingRestart": false,
+  "isDynamicConfig": true,
+  "isReadOnly": false,
+  "name": "pg_qs.store_query_plans",
+  "resourceGroup": "Azure-test-kt",
+  "source": "user-override",
+  "systemData": null,
+  "type": "Microsoft.DBforPostgreSQL/flexibleServers/configurations",
+  "unit": null,
+  "value": "ON"
+}
+[93mconfiguration_name is not a known attribute of class <class 'azure.mgmt.rdbms.postgresql_flexibleservers.models._models_py3.Configuration'> and will be ignored[0m
+[K - Starting ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Finished ..[K{
+  "allowedValues": "all,none",
+  "dataType": "Enumeration",
+  "defaultValue": "none",
+  "description": "Selects which statements are tracked by the pgms_wait_sampling extension.",
+  "documentationLink": null,
+  "id": "/subscriptions/9d3faf91-9fbe-450d-b5dd-37bea9595299/resourceGroups/Azure-test-kt/providers/Microsoft.DBforPostgreSQL/flexibleServers/hammer-kt-demo/configurations/pgms_wait_sampling.query_capture_mode",
+  "isConfigPendingRestart": false,
+  "isDynamicConfig": true,
+  "isReadOnly": false,
+  "name": "pgms_wait_sampling.query_capture_mode",
+  "resourceGroup": "Azure-test-kt",
+  "source": "user-override",
+  "systemData": null,
+  "type": "Microsoft.DBforPostgreSQL/flexibleServers/configurations",
+  "unit": null,
+  "value": "ALL"
+}
+[93mconfiguration_name is not a known attribute of class <class 'azure.mgmt.rdbms.postgresql_flexibleservers.models._models_py3.Configuration'> and will be ignored[0m
+[K - Starting ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Running ..[K / Running ..[K - Running ..[K \ Running ..[K | Finished ..[K{
+  "allowedValues": "on,off",
+  "dataType": "Boolean",
+  "defaultValue": "off",
+  "description": "Enables metrics collection for database and activity statistics",
+  "documentationLink": "https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-monitoring",
+  "id": "/subscriptions/9d3faf91-9fbe-450d-b5dd-37bea9595299/resourceGroups/Azure-test-kt/providers/Microsoft.DBforPostgreSQL/flexibleServers/hammer-kt-demo/configurations/metrics.collector_database_activity",
+  "isConfigPendingRestart": false,
+  "isDynamicConfig": true,
+  "isReadOnly": false,
+  "name": "metrics.collector_database_activity",
+  "resourceGroup": "Azure-test-kt",
+  "source": "user-override",
+  "systemData": null,
+  "type": "Microsoft.DBforPostgreSQL/flexibleServers/configurations",
+  "unit": null,
+  "value": "ON"
+}
+{
+  "id": "/subscriptions/9d3faf91-9fbe-450d-b5dd-37bea9595299/resourcegroups/azure-test-kt/providers/microsoft.dbforpostgresql/flexibleservers/hammer-kt-demo/providers/microsoft.insights/diagnosticSettings/myDiagnosticSetting",
+  "logs": [
+    {
+      "category": "PostgreSQLLogs",
+      "enabled": true,
+      "retentionPolicy": {
+        "days": 0,
+        "enabled": false
+      }
+    },
+    {
+      "category": "PostgreSQLFlexSessions",
+      "enabled": true,
+      "retentionPolicy": {
+        "days": 0,
+        "enabled": false
+      }
+    },
+    {
+      "category": "PostgreSQLFlexQueryStoreRuntime",
+      "enabled": true,
+      "retentionPolicy": {
+        "days": 0,
+        "enabled": false
+      }
+    },
+    {
+      "category": "PostgreSQLFlexQueryStoreWaitStats",
+      "enabled": true,
+      "retentionPolicy": {
+        "days": 0,
+        "enabled": false
+      }
+    },
+    {
+      "category": "PostgreSQLFlexTableStats",
+      "enabled": true,
+      "retentionPolicy": {
+        "days": 0,
+        "enabled": false
+      }
+    },
+    {
+      "category": "PostgreSQLFlexDatabaseXacts",
+      "enabled": true,
+      "retentionPolicy": {
+        "days": 0,
+        "enabled": false
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "category": "AllMetrics",
+      "enabled": true,
+      "retentionPolicy": {
+        "days": 0,
+        "enabled": false
+      },
+      "timeGrain": "PT1M"
+    }
+  ],
+  "name": "myDiagnosticSetting",
+  "resourceGroup": "azure-test-kt",
+  "type": "Microsoft.Insights/diagnosticSettings",
+  "workspaceId": "/subscriptions/9d3faf91-9fbe-450d-b5dd-37bea9595299/resourceGroups/Azure-test-kt/providers/Microsoft.OperationalInsights/workspaces/ktutika"
+}
+----- cleanup the previous hammerdbcli installation --------------
+---------------- download hammerdb cli files ---------------------
+--2023-10-30 07:01:40--  https://github.com/TPC-Council/HammerDB/releases/download/v3.3/HammerDB-3.3-Linux-x86-64-Install
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/159393955/37a96000-06d1-11ea-894a-65445224d887?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231030%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231030T070140Z&X-Amz-Expires=300&X-Amz-Signature=6f140a25a7d6b2ae7665deb4e280ced290624078d0a34274e9a59e73184e05f3&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=159393955&response-content-disposition=attachment%3B%20filename%3DHammerDB-3.3-Linux-x86-64-Install&response-content-type=application%2Foctet-stream [following]
+--2023-10-30 07:01:40--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/159393955/37a96000-06d1-11ea-894a-65445224d887?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231030%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231030T070140Z&X-Amz-Expires=300&X-Amz-Signature=6f140a25a7d6b2ae7665deb4e280ced290624078d0a34274e9a59e73184e05f3&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=159393955&response-content-disposition=attachment%3B%20filename%3DHammerDB-3.3-Linux-x86-64-Install&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6650305 (6.3M) [application/octet-stream]
+Saving to: ‘/root/hammerdbcli/HammerDB-3.3-Linux-x86-64-Install’
+
+HammerDB-3.3-Linux-x86-64-Install                                 0%[                                                                                                                                                        ]       0  --.-KB/s               HammerDB-3.3-Linux-x86-64-Install                               100%[=======================================================================================================================================================>]   6.34M  --.-KB/s    in 0.04s   
+
+2023-10-30 07:01:40 (170 MB/s) - ‘/root/hammerdbcli/HammerDB-3.3-Linux-x86-64-Install’ saved [6650305/6650305]
+
+---------------- install hammerdbcli in silent mode ---------------------
+---------------- download the tcl file ---------------------
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   440    0   440    0     0    333      0 --:--:--  0:00:01 --:--:--   333100   451    0   451    0     0    338      0 --:--:--  0:00:01 --:--:--   338
+******** drop the db owned by user tpcc and then drop user tpcc********************************
+NOTICE:  database "hammerdbtest" does not exist, skipping
+DROP DATABASE
+ERROR:  role "tpcc" does not exist
+old database and user tpcc are dropped
+****** set the parameters in the tcl file **********
+****** Execute hammerdbcli to load the data on to a database **********
+HammerDB CLI v3.3
+Copyright (C) 2003-2019 Steve Shaw
+Type "help" for a list of commands
+The xml is well-formed, applying configuration
+SETTING CONFIGURATION
+Database set to PostgreSQL
+Changed connection:pg_host from localhost to hammer-kt-demo.postgres.database.azure.com for PostgreSQL
+Value 5432 for connection:pg_port is the same as existing value 5432, no change made
+Changed tpcc:pg_count_ware from 1 to 16 for PostgreSQL
+Changed tpcc:pg_num_vu from 1 to 10 for PostgreSQL
+Value postgres for tpcc:pg_superuser is the same as existing value postgres, no change made
+Changed tpcc:pg_superuserpass from postgres to test@123 for PostgreSQL
+Value postgres for tpcc:pg_defaultdbase is the same as existing value postgres, no change made
+Value tpcc for tpcc:pg_user is the same as existing value tpcc, no change made
+Changed tpcc:pg_pass from tpcc to test@123 for PostgreSQL
+Changed tpcc:pg_dbase from tpcc to hammerdbtest for PostgreSQL
+Dictionary Settings for PostgreSQL
+connection {
+ pg_host = hammer-kt-demo.postgres.database.azure.com
+ pg_port = 5432
+}
+tpcc       {
+ pg_count_ware       = 16
+ pg_num_vu           = 10
+ pg_superuser        = postgres
+ pg_superuserpass    = test@123
+ pg_defaultdbase     = postgres
+ pg_user             = tpcc
+ pg_pass             = test@123
+ pg_dbase            = hammerdbtest
+ pg_vacuum           = false
+ pg_dritasnap        = false
+ pg_oracompat        = false
+ pg_storedprocs      = false
+ pg_total_iterations = 1000000
+ pg_raiseerror       = false
+ pg_keyandthink      = false
+ pg_driver           = test
+ pg_rampup           = 2
+ pg_duration         = 5
+ pg_allwarehouse     = false
+ pg_timeprofile      = false
+ pg_async_scale      = false
+ pg_async_client     = 10
+ pg_async_verbose    = false
+ pg_async_delay      = 1000
+}
+Script cleared
+Building 16 Warehouses with 11 Virtual Users, 10 active + 1 Monitor VU(dict value pg_num_vu is set to 10)
+Ready to create a 16 Warehouse PostgreSQL TPC-C schema
+in host HAMMER-KT-DEMO.POSTGRES.DATABASE.AZURE.COM:5432 under user TPCC in database HAMMERDBTEST?
+Enter yes or no: replied yes
+Vuser 1 created - WAIT IDLE
+Vuser 2 created - WAIT IDLE
+Vuser 3 created - WAIT IDLE
+Vuser 4 created - WAIT IDLE
+Vuser 5 created - WAIT IDLE
+Vuser 6 created - WAIT IDLE
+Vuser 7 created - WAIT IDLE
+Vuser 8 created - WAIT IDLE
+Vuser 9 created - WAIT IDLE
+Vuser 10 created - WAIT IDLE
+Vuser 11 created - WAIT IDLE
+RUNNING - TPC-C creation
+Vuser 1:RUNNING
+[10CVuser 1:Monitor Thread
+[10CVuser 1:CREATING TPCC SCHEMA
+[10CVuser 1:CREATING DATABASE hammerdbtest under OWNER tpcc
+[10CVuser 1:CREATING TPCC TABLES
+[10CVuser 1:Loading Item
+[10CVuser 2:RUNNING
+[10CVuser 2:Worker Thread
+[10CVuser 2:Waiting for Monitor Thread...
+[10CVuser 2:Loading 2 Warehouses start:1 end:2
+[10CVuser 2:Start:Mon Oct 30 07:02:18 UTC 2023
+[10CVuser 2:Loading Warehouse
+[10CVuser 2:Loading Stock Wid=1
+[10CVuser 3:RUNNING
+[10CVuser 3:Worker Thread
+[10CVuser 3:Waiting for Monitor Thread...
+[10CVuser 3:Loading 2 Warehouses start:3 end:4
+[10CVuser 3:Start:Mon Oct 30 07:02:19 UTC 2023
+[10CVuser 3:Loading Warehouse
+[10CVuser 3:Loading Stock Wid=3
+[10CVuser 4:RUNNING
+[10CVuser 4:Worker Thread
+[10CVuser 4:Waiting for Monitor Thread...
+[10CVuser 4:Loading 2 Warehouses start:5 end:6
+[10CVuser 4:Start:Mon Oct 30 07:02:19 UTC 2023
+[10CVuser 4:Loading Warehouse
+[10CVuser 4:Loading Stock Wid=5
+[10CVuser 5:RUNNING
+[10CVuser 5:Worker Thread
+[10CVuser 5:Waiting for Monitor Thread...
+[10CVuser 5:Loading 2 Warehouses start:7 end:8
+[10CVuser 5:Start:Mon Oct 30 07:02:20 UTC 2023
+[10CVuser 5:Loading Warehouse
+[10CVuser 5:Loading Stock Wid=7
+[10CVuser 6:RUNNING
+[10CVuser 6:Worker Thread
+[10CVuser 6:Waiting for Monitor Thread...
+[10CVuser 6:Loading 2 Warehouses start:9 end:10
+[10CVuser 6:Start:Mon Oct 30 07:02:20 UTC 2023
+[10CVuser 6:Loading Warehouse
+[10CVuser 6:Loading Stock Wid=9
+[10CVuser 7:RUNNING
+[10CVuser 7:Worker Thread
+[10CVuser 7:Waiting for Monitor Thread...
+[10CVuser 7:Loading 2 Warehouses start:11 end:12
+[10CVuser 7:Start:Mon Oct 30 07:02:21 UTC 2023
+[10CVuser 7:Loading Warehouse
+[10CVuser 7:Loading Stock Wid=11
+[10CVuser 8:RUNNING
+[10CVuser 8:Worker Thread
+[10CVuser 8:Waiting for Monitor Thread...
+[10CVuser 8:Loading 1 Warehouses start:13 end:13
+[10CVuser 8:Start:Mon Oct 30 07:02:21 UTC 2023
+[10CVuser 8:Loading Warehouse
+[10CVuser 8:Loading Stock Wid=13
+[10CVuser 9:RUNNING
+[10CVuser 9:Worker Thread
+[10CVuser 9:Waiting for Monitor Thread...
+[10CVuser 9:Loading 1 Warehouses start:14 end:14
+[10CVuser 9:Start:Mon Oct 30 07:02:22 UTC 2023
+[10CVuser 9:Loading Warehouse
+[10CVuser 9:Loading Stock Wid=14
+[10CVuser 10:RUNNING
+[10CVuser 10:Worker Thread
+[10CVuser 10:Waiting for Monitor Thread...
+[10CVuser 10:Loading 1 Warehouses start:15 end:15
+[10CVuser 10:Start:Mon Oct 30 07:02:22 UTC 2023
+[10CVuser 10:Loading Warehouse
+[10CVuser 10:Loading Stock Wid=15
+[10CVuser 11:RUNNING
+[10CVuser 11:Worker Thread
+[10CVuser 11:Waiting for Monitor Thread...
+[10CVuser 11:Loading 1 Warehouses start:16 end:16
+[10CVuser 11:Start:Mon Oct 30 07:02:23 UTC 2023
+[10CVuser 11:Loading Warehouse
+[10CVuser 11:Loading Stock Wid=16
+[10CVuser 2:Loading Stock - 20000
+------------- loading is completed ----------------
+---------------- down load the workload files -----------------------------
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 95 12513   95 11912    0     0  12434      0  0:00:01 --:--:--  0:00:01 12421100 12513  100 12513    0     0  13061      0 --:--:-- --:--:-- --:--:-- 13047
+Archive:  workloadfiles.zip
+   creating: hammerauto/bak/
+  inflating: hammerauto/bak/mixed_heavy_script-16.sh.txt  
+  inflating: hammerauto/bak/mixed_heavy_script-8.sh.txt  
+  inflating: hammerauto/bak/query1.sql  
+  inflating: hammerauto/bak/query2.sql  
+  inflating: hammerauto/bak/query3.sql  
+  inflating: hammerauto/bak/query4.sql  
+  inflating: hammerauto/bak/query5.sql  
+  inflating: hammerauto/bak/query6.sql  
+  inflating: hammerauto/bak/query7.sql  
+  inflating: hammerauto/bak/read_heavy_script-16.sh.txt  
+  inflating: hammerauto/bak/read_heavy_script-8.sh.txt  
+  inflating: hammerauto/bak/write_heavy_script-16.sh.txt  
+  inflating: hammerauto/bak/write_heavy_script-8.sh.txt  
+  inflating: hammerauto/hammerdbtune_threetables.sql  
+  inflating: hammerauto/insert_more_data.sql  
+  inflating: hammerauto/mixed_heavy_script-16.sh  
+  inflating: hammerauto/mixed_heavy_script-8.sh  
+  inflating: hammerauto/query1.sql   
+  inflating: hammerauto/query2.sql   
+  inflating: hammerauto/query3.sql   
+  inflating: hammerauto/query4.sql   
+  inflating: hammerauto/query5.sql   
+  inflating: hammerauto/query6.sql   
+  inflating: hammerauto/query7.sql   
+  inflating: hammerauto/read_heavy_script-16.sh  
+  inflating: hammerauto/read_heavy_script-8.sh  
+  inflating: hammerauto/upsert_procedure.sql  
+  inflating: hammerauto/write_heavy_script-16.sh  
+  inflating: hammerauto/write_heavy_script-8.sh  
+  inflating: hammerauto/write_heavy_script-8.sql  
+----------------- create the new three tables and compile procedure ---------------------
+CREATE SEQUENCE
+CREATE SEQUENCE
+CREATE SEQUENCE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE PROCEDURE
+initialize pgbench
+dropping old tables...
+NOTICE:  table "pgbench_accounts" does not exist, skipping
+NOTICE:  table "pgbench_branches" does not exist, skipping
+NOTICE:  table "pgbench_history" does not exist, skipping
+NOTICE:  table "pgbench_tellers" does not exist, skipping
+creating tables...
+generating data (client-side)...
+100000 of 100000 tuples (100%) done (elapsed 0.04 s, remaining 0.00 s)
+vacuuming...
+creating primary keys...
+done in 0.31 s (drop tables 0.00 s, create tables 0.02 s, client-side generate 0.11 s, vacuum 0.06 s, primary keys 0.12 s).
+Initiating load on read heavy 8 v core server
+=========================== workload will run for 600 seconds ======================
+=========================== workload is finished ======================
+=========================== kill the remaining screen sessions ==================
+=========================== screen sessions are killed ==================
+root@azure-kt-1st:~/hammerauto# [Kroot@azure-kt-1st:~/hammerauto# [Kroot@azure-kt-1st:~/hammerauto# cat database.yml
+fspg:
+  server_name: hammer-kt-demo
+  location: eastus
+  resource_group: Azure-test-kt
+  sku: Standard_D8ds_v5
+  tier: GeneralPurpose
+  version: 14
+  storage_size: 32
+  login_user: postgres
+  password: test@123
+  subscription: 9d3faf91-9fbe-450d-b5dd-37bea9595299
+
+
+hammer:
+  pghost: hammer-kt-demo.postgres.database.azure.com
+  pgport: 5432
+  pgvusers: 10
+  warehouse_count: 16
+  superuser: postgres
+  pgpassword: test@123
+  pgdatabase: hammerdbtest
+
+workload:
+  pghost: hammer-kt-demo.postgres.database.azure.com
+  pgdatabase: hammerdbtest
+  login_user: postgres
+  pgpassword: test@123
+  workload_duration: 600
+  workload_type: read
+  vcore: 8
+root@azure-kt-1st:~/hammerauto# ca =t create_load_data.sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K

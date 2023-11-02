@@ -1,0 +1,21 @@
+fspg:
+  server_name: hammer-kt-test1
+  location: eastus
+  resource_group: Azure-test-kt
+  sku: Standard_B1ms
+  tier: Burstable
+  version: 14
+  storage_size: 32
+  login_user: postgres
+  password: test@123
+  subscription: 9d3faf91-9fbe-450d-b5dd-37bea9595299
+
+
+db:
+  pghost: hammer-kt-test1.postgres.database.azure.com
+  pgport: 5432
+  pgvusers: 10
+  warehouse_count: 16
+  superuser: postgres
+  pgpassword: test@123
+  pgdatabase: hammerdbtest

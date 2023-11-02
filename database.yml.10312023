@@ -1,0 +1,30 @@
+fspg:
+  server_name: hammer-kt-demo
+  location: eastus
+  resource_group: Azure-test-kt
+  sku: Standard_D8ds_v5
+  tier: GeneralPurpose
+  version: 14
+  storage_size: 32
+  login_user: postgres
+  password: test@123
+  subscription: 9d3faf91-9fbe-450d-b5dd-37bea9595299
+
+
+hammer:
+  pghost: hammer-kt-demo.postgres.database.azure.com
+  pgport: 5432
+  pgvusers: 10
+  warehouse_count: 16
+  superuser: postgres
+  pgpassword: test@123
+  pgdatabase: hammerdbtest
+
+workload:
+  pghost: hammer-kt-demo.postgres.database.azure.com
+  pgdatabase: hammerdbtest
+  login_user: postgres
+  pgpassword: test@123
+  workload_duration: 1800
+  workload_type: read
+  vcore: 8

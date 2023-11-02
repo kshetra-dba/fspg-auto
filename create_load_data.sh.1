@@ -1,0 +1,34 @@
+
+az upgrade -y
+az login
+
+SERVER_NAME=$(grep -A1 'fspg:' database.yml | tail -n1); SERVER_NAME=${SERVER_NAME//*server_name: /}
+LOCATION=$(grep -A2 'fspg:' database.yml | tail -n1); LOCATION=${LOCATION//*location: /}
+RESOURCE_GROUP=$(grep -A3 'fspg:' database.yml | tail -n1); RESOURCE_GROUP=${RESOURCE_GROUP//*resource_group: /}
+SKU=$(grep -A4 'fspg:' database.yml | tail -n1); SKU=${SKU//*sku: /}
+TIER=$(grep -A5 'fspg:' database.yml | tail -n1); TIER=${TIER//*tier: /}
+VERSION=$(grep -A6 'fspg:' database.yml | tail -n1); VERSION=${VERSION//*version: /}
+STORAGE_SIZE=$(grep -A7 'fspg:' database.yml | tail -n1); STORAGE_SIZE=${STORAGE_SIZE//*storage_size: /}
+LOGIN_USER=$(grep -A8 'fspg:' database.yml | tail -n1); LOGIN_USER=${LOGIN_USER//*login_user: /}
+PASSWORD=$(grep -A9 'fspg:' database.yml | tail -n1); PASSWORD=${PASSWORD//*password: /}
+SUBSCRIPTION=$(grep -A10 'fspg:' database.yml | tail -n1); SUBSCRIPTION=${SUBSCRIPTION//*subscription: /}
+
+az account set -s $SUBSCRIPTION
+
+echo "Server creation is starting......"
+date
+
+az postgres flexible-server create --location $LOCATION --resource-group $RESOURCE_GROUP \
+  --name $SERVER_NAME  --admin-user $LOGIN_USER --admin-password $PASSWORD \
+  --sku-name $SKU --tier $TIER --public-access 0.0.0.0-255.255.255.255 --storage-size $STORAGE_SIZE \
+  --tags "key=value" --version $VERSION --high-availability Disabled --zone 1
+
+echo "server creation is finished"
+date
+sleep 600
+echo "############################# server creation has finished ######################################"
+az postgres flexible-server parameter set --name pg_qs.query_capture_mode --value ALL --resource-group $RESOURCE_GROUP --server-name $SERVER_NAME
+az postgres flexible-server parameter set --name pg_qs.store_query_plans --value ON --resource-group $RESOURCE_GROUP --server-name $SERVER_NAME
+az postgres flexible-server parameter set --name pgms_wait_sampling.query_capture_mode --value ALL --resource-group $RESOURCE_GROUP --server-name $SERVER_NAME
+#az monitor diagnostic-settings create
+
